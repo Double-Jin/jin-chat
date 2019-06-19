@@ -74,13 +74,15 @@ class User extends Base
     {
         $params =  $this->request()->getRequestParam();
 
-        $type = $params['type'] ?$params['type'] :'';
-        $wd = $params['wd']? $params['type']:'';
+        $type = isset($params['type']) ?$params['type'] :'';
+        $wd = isset($params['wd'])? $params['wd']:'';
         $user_list = [];
         $group_list = [];
         $db = MysqlPool::defer();
 
+
         $key = '%'.$wd.'%';
+
         switch ($type) {
             case "user" :
                 $user_list = $db->whereOr('id',$key,'like')->whereOr('nickname',$key,'like')->whereOr('username',$key,'like')->get('`user`',null,'id,nickname,avatar');
@@ -91,6 +93,7 @@ class User extends Base
             default :
                 break;
         }
+
         $this->render('find', ['user_list' => $user_list,'group_list' => $group_list,'type' => $type,'wd' => $wd]);
     }
 
