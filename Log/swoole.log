@@ -25199,3 +25199,22 @@ Stack trace:
 [2019-06-19 06:07:45 *16856.3]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
 [2019-06-19 06:07:45 *16860.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
 [2019-06-19 06:07:45 *16860.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 $17197.0]	INFO	Server is reloading all workers now
+[2019-06-19 06:45:16 $8391.0]	INFO	Server is reloading all workers now
+[2019-06-19 06:45:16 *16869.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16869.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16871.2]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16871.2]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16873.4]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16873.4]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16875.6]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16875.6]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16870.1]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16870.1]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16874.5]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16874.5]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16872.3]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16872.3]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16876.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:16 *16876.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-19 06:45:19 *17207.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate

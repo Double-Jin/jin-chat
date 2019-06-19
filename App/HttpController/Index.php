@@ -41,7 +41,7 @@ class Index extends Base
             $this->response()->redirect("/login");
         }
         $user = json_decode($user,true);
-        $hostName = $this->cfgValue('WEBSOCKET_HOST', 'ws://es-chat.cc:9501');
+        $hostName = 'ws://es-chat.cc:9501';
         $this->render('index', [
             'server' => $hostName,'token'=>$token,'user'=>$user
         ]);

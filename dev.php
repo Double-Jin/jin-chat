@@ -43,9 +43,9 @@ return [
 
     /*################ REDIS CONFIG ##################*/
     'REDIS'         => [
-        'host'          => '74.207.242.104',
+        'host'          => '127.0.0.1',
         'port'          => '6379',
-        'auth'          => 'Pff77HuHvqv4',
+        'auth'          => '11111',
         'POOL_MAX_NUM'  => '6',
         'POOL_TIME_OUT' => '0.1',
     ],
