@@ -1,0 +1,11 @@
+version: '3'
+services:
+  swoole:
+    image: ezkuangren/swoole4
+    ports:
+      - 9512:9510
+    volumes:
+      - ./:/var/www/project
+    stdin_open: true
+    tty: true
+    privileged: true

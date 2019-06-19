@@ -1,0 +1,36 @@
+{
+    "name": "easyswoole/easyswoole",
+    "type": "library",
+    "description": "An efficient swoole framework",
+    "keywords" : ["swoole", "framework", "async","easyswoole"],
+    "homepage" : "https://www.easyswoole.com/",
+    "license" : "Apache-2.0",
+    "authors": [
+        {
+            "name": "YF",
+            "email": "291323003@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-swoole": ">=4.3.0",
+        "easyswoole/component": "^1.0",
+        "easyswoole/spl": "^1.0",
+        "easyswoole/http": "^1.0",
+        "easyswoole/utility": "^1.0",
+        "jeremeamia/superclosure": "^2.4",
+        "easyswoole/trigger": "^1.0",
+        "dragonmantank/cron-expression": "^2.2"
+    },
+    "require-dev": {
+        "easyswoole/swoole-ide-helper": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasySwoole\\EasySwoole\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/easyswoole"
+    ]
+}

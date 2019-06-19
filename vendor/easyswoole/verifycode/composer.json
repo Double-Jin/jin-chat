@@ -1,0 +1,23 @@
+{
+    "name": "easyswoole/verifycode",
+    "authors": [
+        {
+            "name": "YF",
+            "email": "291323003@qq.com"
+        },
+        {
+            "name": "evalor",
+            "email": "mipone@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-gd": "*",
+        "easyswoole/spl": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasySwoole\\VerifyCode\\": "src"
+        }
+    }
+}
