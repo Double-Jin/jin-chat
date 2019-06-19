@@ -80,7 +80,6 @@ class User extends Base
         $group_list = [];
         $db = MysqlPool::defer();
 
-
         $key = '%'.$wd.'%';
 
         switch ($type) {
