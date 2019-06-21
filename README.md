@@ -7,7 +7,7 @@
 -   此项目是基于 EasySwoole V3 作为服务端，easySwoole是一款高度封装了swoole拓展而依旧保持swoole原有特性的一个高性能异步框架，旨在提供一个高效、快速、优雅的框架给php开发者。
 所以在此之前，你要熟悉 swoole、EasySwoole、、还有将他们完美结合的 `EasySwoole`<https://www.easyswoole.com>
 -   前端部分是采用 layui, 在此郑重说明，layui 中的 im 部分 `layim` 并不开源，仅供交流学习，请勿将此项目中的 layim 用作商业用途。
-
+-   本demo有助于了解EasySwoole的入门和websocket的在业务中的应用，代码没有经过正规的测试和封装，基本只达到实现功能而已，不可把服务端的逻辑用于生产环境。
 # 基础运行环境
 -   保证 **PHP** 版本大于等于 **7.1**
 -   保证 **Swoole** 拓展版本大于等于 **4.3.0**
