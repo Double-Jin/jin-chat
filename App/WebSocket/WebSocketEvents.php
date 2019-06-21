@@ -84,8 +84,8 @@ class WebSocketEvents
         foreach ($offline_messgae as $k=>$v) {
 
             $fd = Cache::getInstance()->get('uid'.$user['id']);//获取接受者fd
-            $res = $server->push($fd['value'], $v['data']);//发送消息
-            if ($res){
+            if ($fd){
+                $server->push($fd['value'], $v['data']);//发送消息
                 $db->where('id', $v['id'])->update('offline_message',['status' => 1]);
             }
         }
