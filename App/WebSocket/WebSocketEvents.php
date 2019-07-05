@@ -114,7 +114,7 @@ class WebSocketEvents
         foreach ($friend_list as $k => $v) {
             $result = Cache::getInstance()->get('uid'.$v['friend_id']);//获取接受者fd
             if ($result){
-                return $server->push($result['value'], json_encode($data));//发送消息
+                $server->push($result['value'], json_encode($data));//发送消息
             }
         }
         if ($uid !== false) {
