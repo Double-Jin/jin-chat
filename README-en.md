@@ -1,4 +1,4 @@
-README: [English](https://github.com/Double-Jin/jin-chat/blob/master/README.md) | [中文](https://github.com/Double-Jin/jin-chat/blob/master/README-zh.md)
+README: [English](https://github.com/Double-Jin/jin-chat/blob/master/README-en.md) | [中文](https://github.com/Double-Jin/jin-chat/blob/master/README.md)
 
 # statement
 
