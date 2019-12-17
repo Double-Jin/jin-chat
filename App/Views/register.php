@@ -51,7 +51,7 @@
                 <label class="layui-form-label">验证码</label>
                 <div class="layui-input-block">
                     <input type="text" style="width: 200px;float: left;" name="code" required  lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
-                    <img style="width: 150px;height: 40px;margin-left: 10px" src="http://es-chat.cc:9501/getCode?key=<?php echo $code_hash;?>" alt="">
+                    <img style="width: 150px;height: 40px;margin-left: 10px" src="http://127.0.0.1:9501/getCode?key=<?php echo $code_hash;?>" alt="">
                     <input type="hidden" name="key" value="<?php echo $code_hash;?>">
                 </div>
             </div>

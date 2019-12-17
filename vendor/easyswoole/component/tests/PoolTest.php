@@ -59,7 +59,5 @@ class PoolTest extends TestCase
         $pool::invoke(function (PoolObject $object){
             $this->assertEquals(PoolObject::class,$object->fuck());
         });
-
-
     }
 }

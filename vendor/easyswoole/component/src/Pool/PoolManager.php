@@ -17,10 +17,10 @@ class PoolManager
 {
     use Singleton;
 
+    private $poolRegister = [];
     private $pool = [];
     private $defaultConfig;
     private $anonymousMap = [];
-
 
     function __construct()
     {
@@ -38,7 +38,7 @@ class PoolManager
         if($ref->isSubclassOf(AbstractPool::class)){
             $conf = clone $this->defaultConfig;
             $conf->setMaxObjectNum($maxNum);
-            $this->pool[$className] = [
+            $this->poolRegister[$className] = [
                 'class'=>$className,
                 'config'=>$conf
             ];
@@ -50,6 +50,10 @@ class PoolManager
 
     function registerAnonymous(string $name,?callable $createCall = null)
     {
+        // 拒绝相同名称的池重复注册
+        if (isset($this->poolRegister[$name])) {
+            return true;
+        }
         /*
          * 绕过去实现动态class
          */
@@ -82,7 +86,7 @@ class PoolManager
                 return false;
             }
         }
-        $this->pool[$name] = [
+        $this->poolRegister[$name] = [
             'class'=>$class,
             'call'=>$createCall,
         ];
@@ -98,7 +102,10 @@ class PoolManager
             $key = $this->anonymousMap[$key];
         }
         if(isset($this->pool[$key])){
-            $item = $this->pool[$key];
+            return $this->pool[$key];
+        }
+        if(isset($this->poolRegister[$key])){
+            $item = $this->poolRegister[$key];
             if($item instanceof AbstractPool){
                 return $item;
             }else{
@@ -106,12 +113,14 @@ class PoolManager
                 if(isset($item['config'])){
                     $obj = new $class($item['config']);
                     $this->pool[$key] = $obj;
-                }else{
+                }else if(isset($item['call'])){
                     $config = clone $this->defaultConfig;
                     $createCall = $item['call'];
                     $obj = new $class($config,$createCall);
                     $this->pool[$key] = $obj;
                     $this->anonymousMap[get_class($obj)] = $key;
+                }else{
+                    return null;
                 }
                 return $this->getPool($key);
             }
@@ -130,5 +139,15 @@ class PoolManager
             }
             return null;
         }
+    }
+
+    public function clearPool():PoolManager
+    {
+        foreach ($this->pool as $key => $pool){
+            /**@var AbstractPool $pool*/
+            $pool->destroyPool();
+            unset($this->pool[$key]);
+        }
+        return $this;
     }
 }

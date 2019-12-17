@@ -9,7 +9,7 @@
 namespace EasySwoole\Mysqli\Exceptions;
 
 
-class PrepareQueryFail extends \Exception
+class PrepareQueryFail extends Exception
 {
 
 }

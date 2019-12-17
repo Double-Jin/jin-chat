@@ -5,8 +5,9 @@ namespace EasySwoole\RedisPool;
 
 
 use EasySwoole\Component\Pool\PoolObjectInterface;
+use Swoole\Coroutine\Redis;
 
-class Connection extends \Redis implements PoolObjectInterface
+class Connection extends Redis implements PoolObjectInterface
 {
     function gc()
     {
@@ -20,6 +21,6 @@ class Connection extends \Redis implements PoolObjectInterface
 
     function beforeUse(): bool
     {
-        return true;
+        return $this->connected;
     }
 }

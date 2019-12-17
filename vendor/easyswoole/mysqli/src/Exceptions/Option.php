@@ -9,7 +9,7 @@
 namespace EasySwoole\Mysqli\Exceptions;
 
 
-class Option extends \Exception
+class Option extends Exception
 {
 
 }

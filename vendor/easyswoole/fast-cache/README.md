@@ -50,3 +50,13 @@ go(function (){
 ## 内存问题
 
 Actor数据分散在进程内，一个进程可能需要占用很大的内存，因此请根据实际业务量配置内存大小。
+
+## 单元测试
+### 服务启动
+```php
+php tests/process.php
+```
+### 执行测试用例
+```
+ php vendor/bin/co-phpunit tests
+```

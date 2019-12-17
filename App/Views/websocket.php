@@ -23,7 +23,7 @@
 </body>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
-    var wsServer = 'ws://es-chat.cc:9501?token=5d09922ace65e5d09922ace66110005';
+    var wsServer = 'ws://127.0.0.1:9501?token=5d09922ace65e5d09922ace66110005';
     var websocket = new WebSocket(wsServer);
     window.onload = function () {
         websocket.onopen = function (evt) {

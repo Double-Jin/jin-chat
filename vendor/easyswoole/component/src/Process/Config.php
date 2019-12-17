@@ -17,7 +17,6 @@ class Config extends SplBean
     protected $redirectStdinStdout = false;
     protected $pipeType = self::PIPE_TYPE_SOCK_DGRAM;
     protected $enableCoroutine = false;
-    protected $pipeReadSize = 2;
     protected $maxExitWaitTime = 3;
 
     /**
@@ -98,22 +97,6 @@ class Config extends SplBean
     public function setEnableCoroutine(bool $enableCoroutine): void
     {
         $this->enableCoroutine = $enableCoroutine;
-    }
-
-    /**
-     * @return int
-     */
-    public function getPipeReadSize(): int
-    {
-        return $this->pipeReadSize;
-    }
-
-    /**
-     * @param int $pipeReadSize
-     */
-    public function setPipeReadSize(int $pipeReadSize): void
-    {
-        $this->pipeReadSize = $pipeReadSize;
     }
 
     /**

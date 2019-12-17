@@ -16,11 +16,14 @@ return [
         'RUN_MODEL' => SWOOLE_PROCESS,
         'SETTING' => [
             'worker_num' => 8,
-            'task_worker_num' => 8,
             'reload_async' => true,
-            'task_enable_coroutine' => true,
             'max_wait_time' => 3
         ],
+        'TASK' => [
+           'workerNum' =>  4,
+            'maxRunningNum' => 128,
+            'timeout' => 15
+        ]
     ],
     'TEMP_DIR' => '/tmp/',
     'LOG_DIR' => null,
@@ -32,8 +35,8 @@ return [
     'MYSQL' => [
         'host' => '127.0.0.1',//防止报错,就不切换数据库了
         'port' => '3306',
-        'user' => 'homestead',//数据库用户名
-        'password' => 'secret',//数据库密码
+        'user' => 'root',//数据库用户名
+        'password' => '',//数据库密码
         'database' => 'chat',//数据库
         'timeout' => '5',
         'charset' => 'utf8',
@@ -45,7 +48,7 @@ return [
     'REDIS'         => [
         'host'          => '127.0.0.1',
         'port'          => '6379',
-        'auth'          => '11111',
+        'auth'          => '',
         'POOL_MAX_NUM'  => '6',
         'POOL_TIME_OUT' => '0.1',
     ],

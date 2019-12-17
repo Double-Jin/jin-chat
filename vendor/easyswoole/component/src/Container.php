@@ -45,6 +45,11 @@ class Container
         }
     }
 
+    function clear()
+    {
+        $this->container = [];
+    }
+
     function all():array
     {
         return $this->container;

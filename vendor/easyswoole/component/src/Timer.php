@@ -7,19 +7,17 @@
  */
 
 namespace EasySwoole\Component;
-
+use Swoole\Timer as SWTimer;
 
 class Timer
 {
     use Singleton;
 
-    protected $timerList = [];
     protected $timerMap = [];
 
-    function loop(int $ms, callable $callback, $name = null): int
+    function loop(int $ms, callable $callback, $name = null, ...$params): int
     {
-        $id = swoole_timer_tick($ms, $callback);
-        $this->timerList[$id] = $id;
+        $id = SWTimer::tick($ms, $callback, ...$params);
         if ($name !== null) {
             $this->timerMap[md5($name)] = $id;
         }
@@ -28,42 +26,34 @@ class Timer
 
     function clear($timerIdOrName): bool
     {
-        if (!isset($this->timerMap[md5($timerIdOrName)]) && !isset($this->timerList[$timerIdOrName])) {
-            return false;
+        $tid = null;
+        if(is_numeric($timerIdOrName)){
+            $tid = $timerIdOrName;
+        }else if(isset($this->timerMap[md5($timerIdOrName)])){
+            $tid = $this->timerMap[md5($timerIdOrName)];
+            unset($this->timerMap[md5($timerIdOrName)]);
         }
-        if (is_numeric($timerIdOrName)) {
-            if (isset($this->timerList[$timerIdOrName])) {
-                swoole_timer_clear($timerIdOrName);
-                $key = array_search($timerIdOrName, $this->timerMap);
-                if ($key !== null) {
-                    unset($this->timerMap[$key]);
-                }
-                return true;
-            }
+        if($tid && SWTimer::info($tid)){
+            SWTimer::clear($tid);
+            return true;
         }
-        $timerIdOrName = md5($timerIdOrName);
-        if (!isset($this->timerMap[$timerIdOrName])) {
-            return false;
-        }
-        $id = $this->timerMap[$timerIdOrName];
-        swoole_timer_clear($id);
-        unset($this->timerList[$id]);
-        unset($this->timerMap[$timerIdOrName]);
-        return true;
+        return false;
     }
 
     function clearAll(): bool
     {
-        foreach ($this->timerList as $id) {
-            swoole_timer_clear($id);
-        }
-        $this->timerList = [];
         $this->timerMap = [];
+        SWTimer::clearAll();
         return true;
     }
 
-    function after(int $ms, callable $callback): int
+    function after(int $ms, callable $callback, ...$params): int
     {
-        return swoole_timer_after($ms, $callback);
+        return SWTimer::after($ms, $callback, ...$params);
+    }
+
+    function list():array 
+    {
+        return SWTimer::list();
     }
 }

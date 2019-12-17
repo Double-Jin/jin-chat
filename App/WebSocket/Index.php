@@ -29,7 +29,6 @@ class Index extends Controller
     {
         $info = $this->caller()->getArgs();
         $info = $info['data'];
-
         $RedisPool = RedisPool::defer();
 
         $user = $RedisPool->get('User_token_' . $info['token']);

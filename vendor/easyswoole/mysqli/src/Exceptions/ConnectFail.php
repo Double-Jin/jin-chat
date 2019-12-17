@@ -9,7 +9,7 @@
 namespace EasySwoole\Mysqli\Exceptions;
 
 
-class ConnectFail extends \Exception
+class ConnectFail extends Exception
 {
 
 }

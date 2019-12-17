@@ -13,9 +13,10 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "ext-swoole":"^4.3.0",
+        "ext-swoole":"^4.4.2",
         "easyswoole/utility": "^1.0",
-        "easyswoole/spl": "^1.1"
+        "easyswoole/spl": "^1.1",
+        "jeremeamia/superclosure": "^2.4"
     },
     "require-dev": {
         "easyswoole/phpunit": "^1.0",

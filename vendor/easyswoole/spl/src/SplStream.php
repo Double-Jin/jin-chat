@@ -60,6 +60,7 @@ class SplStream
         }
         $info = stream_get_meta_data($this->stream);
         $this->seekable = $info['seekable'];
+        $this->seek(0);
         $this->readable = isset($this->readList[$info['mode']]);
         $this->writable =  isset($this->writeList[$info['mode']]);
     }

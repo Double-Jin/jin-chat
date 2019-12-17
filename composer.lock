@@ -21,7 +21,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -68,20 +68,20 @@
         },
         {
             "name": "easyswoole/component",
-            "version": "1.7.4",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/component.git",
-                "reference": "7fa43c53369c087f5304edc084702e39d64471f9"
+                "reference": "43db8402e275a7d8dea7dad21a9c568b87c58828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/component/zipball/7fa43c53369c087f5304edc084702e39d64471f9",
-                "reference": "7fa43c53369c087f5304edc084702e39d64471f9",
+                "url": "https://api.github.com/repos/easy-swoole/component/zipball/43db8402e275a7d8dea7dad21a9c568b87c58828",
+                "reference": "43db8402e275a7d8dea7dad21a9c568b87c58828",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -89,7 +89,8 @@
             "require": {
                 "easyswoole/spl": "^1.1",
                 "easyswoole/utility": "^1.0",
-                "ext-swoole": "^4.3.0",
+                "ext-swoole": "^4.4.2",
+                "jeremeamia/superclosure": "^2.4",
                 "php": ">=7.1.0"
             },
             "require-dev": {
@@ -121,24 +122,79 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-31T16:32:21+00:00"
+            "time": "2019-08-28T05:23:18+00:00"
         },
         {
-            "name": "easyswoole/easyswoole",
-            "version": "3.2.3",
+            "name": "easyswoole/config",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/easy-swoole/easyswoole.git",
-                "reference": "496ace623057a30f3484a0fcf2ab4926fc5c3402"
+                "url": "https://github.com/easy-swoole/config.git",
+                "reference": "7d2754ed63c961d53ed33a69fb92de26e4914e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/easyswoole/zipball/496ace623057a30f3484a0fcf2ab4926fc5c3402",
-                "reference": "496ace623057a30f3484a0fcf2ab4926fc5c3402",
+                "url": "https://api.github.com/repos/easy-swoole/config/zipball/7d2754ed63c961d53ed33a69fb92de26e4914e26",
+                "reference": "7d2754ed63c961d53ed33a69fb92de26e4914e26",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/spl": "^1.1",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Config\\": "src/",
+                    "EasySwoole\\Config\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "easyswoole component",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-07-30T03:08:09+00:00"
+        },
+        {
+            "name": "easyswoole/easyswoole",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/easyswoole.git",
+                "reference": "43375a0e8acf1ea9eaf692f33aeffaea24c5a8cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/easyswoole/zipball/43375a0e8acf1ea9eaf692f33aeffaea24c5a8cf",
+                "reference": "43375a0e8acf1ea9eaf692f33aeffaea24c5a8cf",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -146,15 +202,18 @@
             "require": {
                 "dragonmantank/cron-expression": "^2.2",
                 "easyswoole/component": "^1.0",
+                "easyswoole/config": "^1.0",
                 "easyswoole/http": "^1.0",
                 "easyswoole/spl": "^1.0",
+                "easyswoole/task": "^1.0",
                 "easyswoole/trigger": "^1.0",
                 "easyswoole/utility": "^1.0",
-                "ext-swoole": ">=4.3.0",
+                "ext-swoole": ">=4.4.4",
                 "jeremeamia/superclosure": "^2.4",
                 "php": ">=7.1.0"
             },
             "require-dev": {
+                "easyswoole/phpunit": "^1.0",
                 "easyswoole/swoole-ide-helper": "^1.2"
             },
             "bin": [
@@ -163,7 +222,8 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "EasySwoole\\EasySwoole\\": "src/"
+                    "EasySwoole\\EasySwoole\\": "src/",
+                    "EasySwoole\\EasySwoole\\Test\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -184,24 +244,24 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-06-06T15:41:28+00:00"
+            "time": "2019-08-22T04:49:35+00:00"
         },
         {
             "name": "easyswoole/fast-cache",
-            "version": "1.0.8",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/fast-cache.git",
-                "reference": "3a425ee20f1717088872206b93af5610eed6efa4"
+                "reference": "06967307a50a82fd8a0e5db81359fd802930c3cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/fast-cache/zipball/3a425ee20f1717088872206b93af5610eed6efa4",
-                "reference": "3a425ee20f1717088872206b93af5610eed6efa4",
+                "url": "https://api.github.com/repos/easy-swoole/fast-cache/zipball/06967307a50a82fd8a0e5db81359fd802930c3cc",
+                "reference": "06967307a50a82fd8a0e5db81359fd802930c3cc",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -209,13 +269,17 @@
             "require": {
                 "easyswoole/component": "^1.4",
                 "easyswoole/spl": "^1.1",
-                "easyswoole/swoole-ide-helper": "^1.2",
                 "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.2"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "EasySwoole\\FastCache\\": "src/"
+                    "EasySwoole\\FastCache\\": "src/",
+                    "EasySwoole\\FastCache\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -236,24 +300,24 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-03-11T11:46:05+00:00"
+            "time": "2019-10-02T17:22:42+00:00"
         },
         {
             "name": "easyswoole/http",
-            "version": "1.2.18",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/http.git",
-                "reference": "12657d5e8ebf9527ca2ba8c7588f6ac59e097620"
+                "reference": "b641fa656a67020cc13f0bc96f0a79b48b4b6d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/http/zipball/12657d5e8ebf9527ca2ba8c7588f6ac59e097620",
-                "reference": "12657d5e8ebf9527ca2ba8c7588f6ac59e097620",
+                "url": "https://api.github.com/repos/easy-swoole/http/zipball/b641fa656a67020cc13f0bc96f0a79b48b4b6d1f",
+                "reference": "b641fa656a67020cc13f0bc96f0a79b48b4b6d1f",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -294,7 +358,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-16T07:23:06+00:00"
+            "time": "2019-07-14T14:38:54+00:00"
         },
         {
             "name": "easyswoole/log",
@@ -311,7 +375,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -344,20 +408,20 @@
         },
         {
             "name": "easyswoole/mysqli",
-            "version": "1.1.17",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/mysqli.git",
-                "reference": "6c0013e9b41b09ce6e2c5eee3be5cde89c53fd52"
+                "reference": "aca9d8c0d3b280cebfc43acd9af9f69fc87014d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/mysqli/zipball/6c0013e9b41b09ce6e2c5eee3be5cde89c53fd52",
-                "reference": "6c0013e9b41b09ce6e2c5eee3be5cde89c53fd52",
+                "url": "https://api.github.com/repos/easy-swoole/mysqli/zipball/aca9d8c0d3b280cebfc43acd9af9f69fc87014d2",
+                "reference": "aca9d8c0d3b280cebfc43acd9af9f69fc87014d2",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -392,24 +456,24 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-17T13:06:54+00:00"
+            "time": "2019-08-19T05:19:08+00:00"
         },
         {
             "name": "easyswoole/mysqli-pool",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/mysqli-pool.git",
-                "reference": "517b6a3d23c346a88ce5b395dc38825080eb3260"
+                "reference": "6bb1a92703ee796c0dc7fd907fdff5f261db66f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/mysqli-pool/zipball/517b6a3d23c346a88ce5b395dc38825080eb3260",
-                "reference": "517b6a3d23c346a88ce5b395dc38825080eb3260",
+                "url": "https://api.github.com/repos/easy-swoole/mysqli-pool/zipball/6bb1a92703ee796c0dc7fd907fdff5f261db66f6",
+                "reference": "6bb1a92703ee796c0dc7fd907fdff5f261db66f6",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -419,12 +483,14 @@
                 "easyswoole/mysqli": "^1.1"
             },
             "require-dev": {
+                "easyswoole/phpunit": "^1.0",
                 "easyswoole/swoole-ide-helper": "^1.2"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "EasySwoole\\MysqliPool\\": "src/"
+                    "EasySwoole\\MysqliPool\\": "src/",
+                    "EasySwoole\\MysqliPool\\Test\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -445,24 +511,24 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-20T05:54:50+00:00"
+            "time": "2019-08-09T03:44:56+00:00"
         },
         {
             "name": "easyswoole/redis-pool",
-            "version": "1.0.3",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/redis-pool.git",
-                "reference": "55572fa2b452d86d303204e4637cfdb84deffe9c"
+                "reference": "c9800c61e2204ac027958b3a6aac1b7d43ad9be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/redis-pool/zipball/55572fa2b452d86d303204e4637cfdb84deffe9c",
-                "reference": "55572fa2b452d86d303204e4637cfdb84deffe9c",
+                "url": "https://api.github.com/repos/easy-swoole/redis-pool/zipball/c9800c61e2204ac027958b3a6aac1b7d43ad9be5",
+                "reference": "c9800c61e2204ac027958b3a6aac1b7d43ad9be5",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -498,7 +564,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-21T04:09:34+00:00"
+            "time": "2019-09-06T06:36:23+00:00"
         },
         {
             "name": "easyswoole/socket",
@@ -515,7 +581,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -556,34 +622,36 @@
         },
         {
             "name": "easyswoole/spl",
-            "version": "1.1.14",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/spl.git",
-                "reference": "3b26f1aed2e8fd878db1aeb708062e1a1a85d48e"
+                "reference": "d0fb72ee0a9febf64a241ebc1cbcaad47d657570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/spl/zipball/3b26f1aed2e8fd878db1aeb708062e1a1a85d48e",
-                "reference": "3b26f1aed2e8fd878db1aeb708062e1a1a85d48e",
+                "url": "https://api.github.com/repos/easy-swoole/spl/zipball/d0fb72ee0a9febf64a241ebc1cbcaad47d657570",
+                "reference": "d0fb72ee0a9febf64a241ebc1cbcaad47d657570",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.1"
+                "easyswoole/phpunit": "^1.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "EasySwoole\\Spl\\": "src/"
+                    "EasySwoole\\Spl\\": "src/",
+                    "EasySwoole\\Spl\\Test\\": "test/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -604,58 +672,68 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-06-12T01:06:34+00:00"
+            "time": "2019-12-11T03:16:51+00:00"
         },
         {
-            "name": "easyswoole/swoole-ide-helper",
-            "version": "1.3.0",
+            "name": "easyswoole/task",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/easy-swoole/ide-helper.git",
-                "reference": "767f87773c444aede2e18a683a31107f7bdd6459"
+                "url": "https://github.com/easy-swoole/task.git",
+                "reference": "6eed25cf6a8bd878c5c101c41bfd28d9a02f7926"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/ide-helper/zipball/767f87773c444aede2e18a683a31107f7bdd6459",
-                "reference": "767f87773c444aede2e18a683a31107f7bdd6459",
+                "url": "https://api.github.com/repos/easy-swoole/task/zipball/6eed25cf6a8bd878c5c101c41bfd28d9a02f7926",
+                "reference": "6eed25cf6a8bd878c5c101c41bfd28d9a02f7926",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
+            "require": {
+                "easyswoole/component": "^1.6",
+                "easyswoole/spl": "^1.2",
+                "ext-swoole": ">=4.4.0"
+            },
+            "require-dev": {
+                "easyswoole/swoole-ide-helper": "^1.0"
+            },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Task\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Team Swoole",
-                    "email": "team@swoole.com"
-                }
+            "description": "A simple Queue implementation integrated into easySwoole",
+            "keywords": [
+                "easyswoole"
             ],
-            "description": "swoole-ide-helper",
-            "time": "2019-05-16T06:47:22+00:00"
+            "time": "2019-08-22T08:28:13+00:00"
         },
         {
             "name": "easyswoole/template",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/template.git",
-                "reference": "36015d78983a06448ef1656b842d8e83ead2048c"
+                "reference": "487b12c9ee935ce01c7350849dd56f2701cd5dc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/template/zipball/36015d78983a06448ef1656b842d8e83ead2048c",
-                "reference": "36015d78983a06448ef1656b842d8e83ead2048c",
+                "url": "https://api.github.com/repos/easy-swoole/template/zipball/487b12c9ee935ce01c7350849dd56f2701cd5dc2",
+                "reference": "487b12c9ee935ce01c7350849dd56f2701cd5dc2",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -696,7 +774,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-27T05:58:30+00:00"
+            "time": "2019-10-11T04:27:46+00:00"
         },
         {
             "name": "easyswoole/trigger",
@@ -713,7 +791,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -749,25 +827,27 @@
         },
         {
             "name": "easyswoole/utility",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/utility.git",
-                "reference": "8281bcee8f901b33a5bcbec663b029d216f0c86a"
+                "reference": "585252be9ed0cdfd8badbddb7df60edce794daf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/utility/zipball/8281bcee8f901b33a5bcbec663b029d216f0c86a",
-                "reference": "8281bcee8f901b33a5bcbec663b029d216f0c86a",
+                "url": "https://api.github.com/repos/easy-swoole/utility/zipball/585252be9ed0cdfd8badbddb7df60edce794daf0",
+                "reference": "585252be9ed0cdfd8badbddb7df60edce794daf0",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
                 "php": ">=7.1.0"
             },
             "type": "library",
@@ -787,24 +867,24 @@
                 }
             ],
             "description": "easyswoole extension tool library",
-            "time": "2019-06-01T15:14:12+00:00"
+            "time": "2019-09-19T03:02:37+00:00"
         },
         {
             "name": "easyswoole/validate",
-            "version": "1.1.7",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/validate.git",
-                "reference": "2896d74f53a105330d6c0aafa6fecee075efc838"
+                "reference": "ae03b588b52392d41d8bf26345b4884e004ad6a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/validate/zipball/2896d74f53a105330d6c0aafa6fecee075efc838",
-                "reference": "2896d74f53a105330d6c0aafa6fecee075efc838",
+                "url": "https://api.github.com/repos/easy-swoole/validate/zipball/ae03b588b52392d41d8bf26345b4884e004ad6a0",
+                "reference": "ae03b588b52392d41d8bf26345b4884e004ad6a0",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -840,7 +920,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-04-19T15:29:59+00:00"
+            "time": "2019-10-21T07:07:10+00:00"
         },
         {
             "name": "easyswoole/verifycode",
@@ -857,7 +937,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -901,7 +981,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -965,7 +1045,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1026,7 +1106,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1065,20 +1145,20 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.2",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420"
+                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1088,7 +1168,8 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
+                "ircmaxell/php-yacc": "0.0.5",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -1096,7 +1177,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1118,7 +1199,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-05-25T20:07:01+00:00"
+            "time": "2019-11-08T13:50:10+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1135,7 +1216,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1178,20 +1259,20 @@
         },
         {
             "name": "symfony/polyfill-php56",
-            "version": "v1.11.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "f4dddbc5c3471e1b700a147a20ae17cdb72dbe42"
+                "reference": "53dd1cdf3cb986893ccf2b96665b25b3abb384f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/f4dddbc5c3471e1b700a147a20ae17cdb72dbe42",
-                "reference": "f4dddbc5c3471e1b700a147a20ae17cdb72dbe42",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/53dd1cdf3cb986893ccf2b96665b25b3abb384f4",
+                "reference": "53dd1cdf3cb986893ccf2b96665b25b3abb384f4",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1203,7 +1284,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -1236,24 +1317,24 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-02-06T07:57:58+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         },
         {
             "name": "symfony/polyfill-util",
-            "version": "v1.11.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "b46c6cae28a3106735323f00a0c38eccf2328897"
+                "reference": "964a67f293b66b95883a5ed918a65354fcd2258f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/b46c6cae28a3106735323f00a0c38eccf2328897",
-                "reference": "b46c6cae28a3106735323f00a0c38eccf2328897",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/964a67f293b66b95883a5ed918a65354fcd2258f",
+                "reference": "964a67f293b66b95883a5ed918a65354fcd2258f",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -1264,7 +1345,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -1294,7 +1375,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2019-02-08T14:16:39+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         }
     ],
     "packages-dev": [],

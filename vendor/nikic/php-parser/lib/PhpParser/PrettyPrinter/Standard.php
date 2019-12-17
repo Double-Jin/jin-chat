@@ -37,6 +37,10 @@ class Standard extends PrettyPrinterAbstract
         return '?' . $this->p($node->type);
     }
 
+    protected function pUnionType(Node\UnionType $node) {
+        return $this->pImplode($node->types, '|');
+    }
+
     protected function pIdentifier(Node\Identifier $node) {
         return $node->name;
     }
@@ -159,8 +163,13 @@ class Standard extends PrettyPrinterAbstract
             return (string) $node->value;
         }
 
-        $sign = $node->value < 0 ? '-' : '';
-        $str = (string) $node->value;
+        if ($node->value < 0) {
+            $sign = '-';
+            $str = (string) -$node->value;
+        } else {
+            $sign = '';
+            $str = (string) $node->value;
+        }
         switch ($kind) {
             case Scalar\LNumber::KIND_BIN:
                 return $sign . '0b' . base_convert($str, 10, 2);

@@ -7,17 +7,22 @@ use PhpParser\ErrorHandler;
 use PhpParser\Lexer;
 use PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
 use PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
+use PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
 use PhpParser\Lexer\TokenEmulator\TokenEmulatorInterface;
+use PhpParser\Parser\Tokens;
 
 class Emulative extends Lexer
 {
     const PHP_7_3 = '7.3.0dev';
     const PHP_7_4 = '7.4.0dev';
 
+    const T_COALESCE_EQUAL = 1007;
+    const T_FN = 1008;
+
     const FLEXIBLE_DOC_STRING_REGEX = <<<'REGEX'
 /<<<[ \t]*(['"]?)([a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*)\1\r?\n
 (?:.*\r?\n)*?
-(?<indentation>\h*)\2(?![a-zA-Z_\x80-\xff])(?<separator>(?:;?[\r\n])?)/x
+(?<indentation>\h*)\2(?![a-zA-Z0-9_\x80-\xff])(?<separator>(?:;?[\r\n])?)/x
 REGEX;
 
     /** @var mixed[] Patches used to reverse changes introduced in the code */
@@ -33,14 +38,12 @@ REGEX;
     {
         parent::__construct($options);
 
-        // prepare token emulators
         $this->tokenEmulators[] = new FnTokenEmulator();
         $this->tokenEmulators[] = new CoaleseEqualTokenEmulator();
+        $this->tokenEmulators[] = new NumericLiteralSeparatorEmulator();
 
-        // add emulated tokens here
-        foreach ($this->tokenEmulators as $emulativeToken) {
-            $this->tokenMap[$emulativeToken->getTokenId()] = $emulativeToken->getParserTokenId();
-        }
+        $this->tokenMap[self::T_COALESCE_EQUAL] = Tokens::T_COALESCE_EQUAL;
+        $this->tokenMap[self::T_FN] = Tokens::T_FN;
     }
 
     public function startLexing(string $code, ErrorHandler $errorHandler = null) {
@@ -57,14 +60,6 @@ REGEX;
         // 1. emulation of heredoc and nowdoc new syntax
         $preparedCode = $this->processHeredocNowdoc($code);
         parent::startLexing($preparedCode, $collector);
-
-        // add token emulation
-        foreach ($this->tokenEmulators as $emulativeToken) {
-            if ($emulativeToken->isEmulationNeeded($code)) {
-                $this->tokens = $emulativeToken->emulate($code, $this->tokens);
-            }
-        }
-
         $this->fixupTokens();
 
         $errors = $collector->getErrors();
@@ -72,6 +67,13 @@ REGEX;
             $this->fixupErrors($errors);
             foreach ($errors as $error) {
                 $errorHandler->handleError($error);
+            }
+        }
+
+        // add token emulation
+        foreach ($this->tokenEmulators as $emulativeToken) {
+            if ($emulativeToken->isEmulationNeeded($code)) {
+                $this->tokens = $emulativeToken->emulate($code, $this->tokens);
             }
         }
     }

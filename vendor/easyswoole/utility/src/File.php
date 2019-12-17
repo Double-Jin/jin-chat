@@ -216,7 +216,7 @@ class File
     static function scanDirectory($dirPath)
     {
         if (!is_dir($dirPath)) return false;
-        $dirPath = realpath($dirPath) . '/';
+        $dirPath = rtrim($dirPath,'/') . '/';
         $dirs = array( $dirPath );
 
         $fileContainer = array();

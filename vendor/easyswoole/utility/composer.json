@@ -10,11 +10,18 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "ext-openssl": "*"
     },
     "autoload": {
         "psr-4": {
             "EasySwoole\\Utility\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EasySwoole\\Utility\\Tests": "tests/"
         }
     }
 }

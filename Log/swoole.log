@@ -25218,3 +25218,409 @@ Stack trace:
 [2019-06-19 06:45:16 *16876.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
 [2019-06-19 06:45:16 *16876.7]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
 [2019-06-19 06:45:19 *17207.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-27 10:54:52 *54571.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-08-27 10:54:52 $54560.0]	WARNING	swManager_check_exit_status: worker#2[pid=54571] abnormal exit, status=255, signal=0
+[2019-08-27 10:54:52 *55193.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-08-27 10:54:52 $54560.0]	WARNING	swManager_check_exit_status: worker#2[pid=55193] abnormal exit, status=255, signal=0
+[2019-08-27 10:54:54 *55194.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-08-27 10:54:54 $54560.0]	WARNING	swManager_check_exit_status: worker#2[pid=55194] abnormal exit, status=255, signal=0
+[2019-08-27 10:54:57 *55195.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-08-27 10:54:57 $54560.0]	WARNING	swManager_check_exit_status: worker#2[pid=55195] abnormal exit, status=255, signal=0
+[2019-08-27 10:55:02 *55199.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-08-27 10:55:02 $54560.0]	WARNING	swManager_check_exit_status: worker#2[pid=55199] abnormal exit, status=255, signal=0
+[2019-09-22 20:06:36 *46737.3]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479): EasySwoole\Mysqli\Mysqli-> in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 117
+[2019-09-22 20:06:36 $46725.0]	WARNING	swManager_check_exit_status: worker#3[pid=46737] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 *15912.6]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15906.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15911.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15908.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15909.3]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15910.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15907.1]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 *15913.7]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#7[pid=15913] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#6[pid=15912] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#4[pid=15910] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#3[pid=15909] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#2[pid=15908] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#5[pid=15911] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#1[pid=15907] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:18 $15905.0]	WARNING	swManager_check_exit_status: worker#0[pid=15906] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 *15922.7]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 *15923.6]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#6[pid=15923] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#7[pid=15922] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 *15928.1]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 *15924.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 *15925.3]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#3[pid=15925] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#1[pid=15928] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#4[pid=15924] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 *15926.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 *15927.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 *15929.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#2[pid=15926] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#5[pid=15927] abnormal exit, status=255, signal=0
+[2019-12-17 19:17:48 $15905.0]	WARNING	swManager_check_exit_status: worker#0[pid=15929] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 *15930.6]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15931.7]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15932.3]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15933.1]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15934.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#4[pid=15934] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#1[pid=15933] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#3[pid=15932] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#7[pid=15931] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#6[pid=15930] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 *15935.2]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15937.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 *15936.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php on line 119
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#5[pid=15936] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#0[pid=15937] abnormal exit, status=255, signal=0
+[2019-12-17 19:18:18 $15905.0]	WARNING	swManager_check_exit_status: worker#2[pid=15935] abnormal exit, status=255, signal=0
+[2019-12-17 19:26:21 $16125.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:26:44 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:26:47 *16160.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16161.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16165.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16163.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16159.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16162.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16166.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:26:47 *16164.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:31 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:27:34 *16180.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16179.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16176.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16183.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16182.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16177.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16178.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:27:34 *16181.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:41 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:29:44 *16193.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16188.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16190.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16191.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16187.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16189.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16186.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:44 *16192.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:46 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:29:49 *16211.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16212.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16209.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16213.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16215.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16208.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16214.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:29:49 *16210.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:07 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:30:10 *16221.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16217.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16218.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16223.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16222.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16224.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16220.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:10 *16219.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:22 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:30:25 *16230.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16232.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16233.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16234.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16229.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16235.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16231.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:25 *16236.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:41 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:30:44 *16239.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16242.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16245.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16243.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16240.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16246.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16241.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:44 *16244.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:50 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:30:53 *16250.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16254.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16251.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16255.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16253.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16252.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16249.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:30:53 *16256.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:06 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:31:08 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:31:09 *16261.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16259.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16262.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16264.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16260.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16263.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16265.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:09 *16266.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16270.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16269.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16272.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16275.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16273.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16271.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16268.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:11 *16274.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:31:59 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:32:02 *16278.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16281.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16279.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16282.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16283.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16277.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16284.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:02 *16280.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:22 $16158.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:32:25 *16300.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16298.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16294.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16295.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16293.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16297.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16296.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:32:25 *16299.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:00 $16314.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:34:03 *16316.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16315.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16320.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16321.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16319.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16322.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16317.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:03 *16318.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:16 $16314.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:34:19 *16360.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16359.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16358.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16363.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16361.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16364.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16362.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:19 *16357.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:25 $16314.0]	INFO	Server is reloading all workers now
+[2019-12-17 19:34:28 *16368.0]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16372.4]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16375.5]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16374.7]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16369.1]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16373.6]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16371.2]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-12-17 19:34:28 *16370.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate

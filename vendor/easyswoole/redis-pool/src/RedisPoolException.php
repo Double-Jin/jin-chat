@@ -6,7 +6,7 @@
  * Time: 下午11:08
  */
 
-namespace EasySwoole\MysqliPool;
+namespace EasySwoole\RedisPool;
 
 
 class RedisPoolException extends \Exception

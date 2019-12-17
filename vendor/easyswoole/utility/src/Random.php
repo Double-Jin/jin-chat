@@ -12,10 +12,10 @@ class Random
 {
     /**
      * 生成随机字符串 可用于生成随机密码等
-     * @param int    $length   生成长度
+     * @param int $length 生成长度
      * @param string $alphabet 自定义生成字符集
-     * @author : evalor <master@evalor.cn>
      * @return bool|string
+     * @author : evalor <master@evalor.cn>
      */
     static function character($length = 6, $alphabet = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789')
     {
@@ -42,20 +42,44 @@ class Random
     /**
      * 生成随机数字 可用于生成随机验证码等
      * @param int $length 生成长度
-     * @author : evalor <master@evalor.cn>
      * @return bool|string
+     * @author : evalor <master@evalor.cn>
      */
     static function number($length = 6)
     {
         return static::character($length, '0123456789');
     }
 
+    /**
+     * 数组随机抽出一个
+     * @param array $data
+     * @return mixed|null
+     */
     static function arrayRandOne(array $data)
     {
-        if(empty($data)){
+        if (empty($data)) {
             return null;
         }
         mt_srand();
         return $data[array_rand($data)];
+    }
+
+    /**
+     * 生产一个UUID4
+     * 有概率重复|短时间内可以认为唯一
+     * @return string
+     */
+    static function makeUUIDV4()
+    {
+        mt_srand((double)microtime() * 10000);
+        $charid = strtolower(md5(uniqid(rand(), true)));
+        $hyphen = '-';
+        $uuidV4 =
+            substr($charid, 0, 8) . $hyphen .
+            substr($charid, 8, 4) . $hyphen .
+            substr($charid, 12, 4) . $hyphen .
+            substr($charid, 16, 4) . $hyphen .
+            substr($charid, 20, 12);
+        return $uuidV4;
     }
 }

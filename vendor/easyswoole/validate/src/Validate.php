@@ -33,16 +33,19 @@ class Validate
      * 添加一个待验证字段
      * @param string $name
      * @param null|string $alias
+     * @param bool $reset
      * @return Rule
      */
-    public function addColumn(string $name, ?string $alias = null): Rule
+    public function addColumn(string $name, ?string $alias = null,bool $reset = false): Rule
     {
-        $rule = new Rule();
-        $this->columns[$name] = [
-            'alias' => $alias,
-            'rule'  => $rule
-        ];
-        return $rule;
+        if(!isset($this->columns[$name]) || $reset){
+            $rule = new Rule();
+            $this->columns[$name] = [
+                'alias' => $alias,
+                'rule'  => $rule
+            ];
+        }
+        return $this->columns[$name]['rule'];
     }
 
     /**
@@ -62,8 +65,9 @@ class Validate
             /*
              * 优先检测是否带有optional选项
              * 如果设置了optional又不存在对应字段，则跳过该字段检测
+             * 额外的如果这个字段是空字符串一样会认为不存在该字段
              */
-            if (isset($rules['optional']) && !isset($data[$column])) {
+            if (isset($rules['optional']) && (!isset($data[$column]) || $data[$column] === '')) {
                 $this->verifiedData[$column] = $spl->get($column);
                 continue;
             }

@@ -7,6 +7,7 @@ namespace EasySwoole\Component\Process\Socket;
 use EasySwoole\Component\Process\AbstractProcess;
 use EasySwoole\Component\Process\Exception;
 use Swoole\Coroutine\Socket;
+use Swoole\Coroutine;
 
 abstract class AbstractTcpProcess extends AbstractProcess
 {
@@ -38,7 +39,7 @@ abstract class AbstractTcpProcess extends AbstractProcess
                 return;
             }
             if($this->getConfig()->isAsyncCallback()){
-                go(function ()use($client){
+                Coroutine::create(function ()use($client){
                     try{
                         $this->onAccept($client);
                     }catch (\Throwable $throwable){

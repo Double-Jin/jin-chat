@@ -122,7 +122,7 @@ class Error
      * 获取字段别名
      * @return string
      */
-    public function getFieldAlias(): string
+    public function getFieldAlias(): ?string
     {
         return $this->fieldAlias;
     }

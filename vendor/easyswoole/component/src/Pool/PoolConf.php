@@ -10,8 +10,9 @@ namespace EasySwoole\Component\Pool;
 
 
 use EasySwoole\Component\Pool\Exception\PoolObjectNumError;
+use EasySwoole\Spl\SplBean;
 
-class PoolConf
+class PoolConf extends SplBean
 {
     protected $intervalCheckTime = 30*1000;
     protected $maxIdleTime = 15;
@@ -67,7 +68,6 @@ class PoolConf
 
     public function setMaxObjectNum(int $maxObjectNum): PoolConf
     {
-
         if($this->minObjectNum >= $maxObjectNum){
             throw new PoolObjectNumError('min num is bigger than max');
         }

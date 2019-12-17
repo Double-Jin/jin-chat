@@ -12,14 +12,16 @@
     }
   ],
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.1.0",
+    "ext-json": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8.1"
+    "easyswoole/phpunit": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "EasySwoole\\Spl\\": "src/"
+      "EasySwoole\\Spl\\": "src/",
+      "EasySwoole\\Spl\\Test\\": "test/"
     }
   }
 }

@@ -1162,3 +1162,293 @@ Stack trace:
 [2019-06-19 14:08:20][DEBUG][NOTICE] : [Undefined variable: count at file:/work/eschat/App/HttpController/User.php line:248]
 [2019-06-19 14:08:42][DEBUG][NOTICE] : [Undefined index: type at file:/work/eschat/App/HttpController/User.php line:71]
 [2019-06-19 14:08:42][DEBUG][NOTICE] : [Undefined index: wd at file:/work/eschat/App/HttpController/User.php line:72]
+[2019-06-22 23:11:14][DEBUG][ERROR] : [App\Utility\Pool\RedisPool pool is empty at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/TraitInvoker.php line:58]
+[2019-08-27 10:54:52][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:54:52][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:54:54][DEBUG][ERROR] : [connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:54:54][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:54:57][DEBUG][ERROR] : [connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:54:57][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:55:02][DEBUG][ERROR] : [connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-08-27 10:55:02][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479) at file:/Users/linjinjin/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-09-22 20:05:24][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-09-22 20:05:25][DEBUG][WARNING] : [Swoole\Event::rshutdown(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:Unknown line:0]
+[2019-09-22 20:06:13][DEBUG][ERROR] : [App\Utility\Pool\RedisPool pool is empty at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/TraitInvoker.php line:58]
+[2019-09-22 20:06:36][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:117
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(115): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1496): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(1058): EasySwoole\Mysqli\Mysqli->prepareQuery()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(479): EasySwoole\Mysqli\Mysqli-> at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:117]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:03][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [go(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/fast-cache/src/CacheProcess.php line:205]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:04][DEBUG][WARNING] : [Swoole\Server::start(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-12-17 19:11:05][DEBUG][WARNING] : [Swoole\Event::rshutdown(): Using Xdebug in coroutines is extremely dangerous, please notice that it may lead to coredump! at file:Unknown line:0]
+[2019-12-17 19:13:30][DEBUG][ERROR] : [Swoole\Server::start(): failed to start server. Error: swServer_start_check: onTask event callback must be set at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/easyswoole/src/ServerManager.php line:120]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:17:48][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:18:18][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exceptions\ConnectFail: connect to homestead@127.0.0.1 at port 3306 fail: 1045 SQLSTATE[28000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) in /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php:119
+Stack trace:
+#0 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#1 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#2 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(117): EasySwoole\Mysqli\Mysqli->connect()
+#3 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php(148): EasySwoole\Mysqli\Mysqli->connect()
+#4 /Users/apple/Documents/code/jin-chat/App/Utility/Pool/MysqlObject.php(28): EasySwoole\Mysqli\Mysqli->getMysqlClient()
+#5 /Users/apple/Documents/code/jin-chat/vendor/easyswoole/component/src/Pool/AbstractPool.php(146): App\Utility\Pool\Mys at file:/Users/apple/Documents/code/jin-chat/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-12-17 19:31:26][DEBUG][NOTICE] : [Undefined index: data at file:/Users/apple/Documents/code/jin-chat/App/WebSocket/Index.php line:32]
+[2019-12-17 19:32:39][DEBUG][NOTICE] : [Undefined index: data at file:/Users/apple/Documents/code/jin-chat/App/WebSocket/Index.php line:32]
+[2019-12-17 19:32:43][DEBUG][NOTICE] : [Undefined index: data at file:/Users/apple/Documents/code/jin-chat/App/WebSocket/Index.php line:32]
+[2019-12-17 19:34:08][DEBUG][NOTICE] : [Undefined index: data at file:/Users/apple/Documents/code/jin-chat/App/WebSocket/Index.php line:32]

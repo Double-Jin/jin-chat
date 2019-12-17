@@ -40,8 +40,9 @@ class Index extends Base
         if (!$user) {
             $this->response()->redirect("/login");
         }
+
         $user = json_decode($user,true);
-        $hostName = 'ws://es-chat.cc:9501';
+        $hostName = 'ws://'.$this->request()->getServerParams()['remote_addr'].':9501';
         $this->render('index', [
             'server' => $hostName,'token'=>$token,'user'=>$user
         ]);

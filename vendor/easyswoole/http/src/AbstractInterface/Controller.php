@@ -11,7 +11,6 @@ namespace EasySwoole\Http\AbstractInterface;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-use EasySwoole\Http\Session\SessionDriver;
 use EasySwoole\Validate\Validate;
 
 abstract class Controller
@@ -19,8 +18,6 @@ abstract class Controller
     private $request;
     private $response;
     private $actionName;
-    private $session;
-    private $sessionDriver = SessionDriver::class;
     private $allowMethods = [];
     private $defaultProperties = [];
 
@@ -59,11 +56,6 @@ abstract class Controller
 
     protected function gc()
     {
-        // TODO: Implement gc() method.
-        if ($this->session instanceof SessionDriver) {
-            $this->session->writeClose();
-            $this->session = null;
-        }
         //恢复默认值
         foreach ($this->defaultProperties as $property => $value) {
             $this->$property = $value;
@@ -169,20 +161,5 @@ abstract class Controller
     protected function validate(Validate $validate)
     {
         return $validate->validate($this->request()->getRequestParam());
-    }
-
-    protected function session(\SessionHandlerInterface $sessionHandler = null): SessionDriver
-    {
-        if ($this->session == null) {
-            $class = $this->sessionDriver;
-            $this->session = new $class($this->request, $this->response, $sessionHandler);
-        }
-        return $this->session;
-    }
-
-    protected function sessionDriver(string $sessionDriver): Controller
-    {
-        $this->sessionDriver = $sessionDriver;
-        return $this;
     }
 }

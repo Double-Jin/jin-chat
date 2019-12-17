@@ -58,4 +58,9 @@ class MultiContainer
     {
         return $this->container;
     }
+
+    function clear()
+    {
+        $this->container = [];
+    }
 }

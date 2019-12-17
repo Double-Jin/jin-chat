@@ -9,6 +9,7 @@
 namespace EasySwoole\EasySwoole;
 
 
+use EasySwoole\Component\Process\AbstractProcess;
 use EasySwoole\Component\Singleton;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
 use Swoole\Redis\Server as RedisServer;
@@ -76,13 +77,13 @@ class ServerManager
     }
 
 
-    public function addServer(string $serverName,int $port,int $type = SWOOLE_TCP,string $listenAddress = '0.0.0.0',array $setting = [
-        "open_eof_check"=>false,
-    ]):EventRegister
+    public function addServer(string $serverName,int $port,int $type = SWOOLE_TCP,string $listenAddress = '0.0.0.0',array $setting = []):EventRegister
     {
         $eventRegister = new EventRegister();
         $subPort = $this->swooleServer->addlistener($listenAddress,$port,$type);
-        $subPort->set($setting);
+        if(!empty($setting)){
+            $subPort->set($setting);
+        }
         $this->subServer[$serverName] = $subPort;
         $this->subServerRegister[$serverName] = [
             'port'=>$port,
@@ -92,6 +93,11 @@ class ServerManager
             'eventRegister'=>$eventRegister
         ];
         return $eventRegister;
+    }
+
+    public function addProcess(AbstractProcess $process)
+    {
+        $this->getSwooleServer()->addProcess($process->getProcess());
     }
 
     function getMainEventRegister():EventRegister

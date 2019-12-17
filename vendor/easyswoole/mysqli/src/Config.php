@@ -19,13 +19,27 @@ class Config extends SplBean
     protected $database;//数据库
     protected $port = 3306;
     protected $timeout = 30;
-    protected $connect_timeout = 5;
     protected $charset = 'utf8';
     protected $strict_type =  false; //开启严格模式，返回的字段将自动转为数字类型
     protected $fetch_mode = false;//开启fetch模式, 可与pdo一样使用fetch/fetchAll逐行或获取全部结果集(4.0版本以上)
     protected $alias = '';
     protected $isSubQuery = false;
     protected $max_reconnect_times = 3;
+    protected $errorToException = false;
+    /**
+     * @var ?callable
+     */
+    protected $onQuery;
+
+    public function isErrorToException(): bool
+    {
+        return $this->errorToException;
+    }
+
+    public function setErrorToException(bool $errorToException): void
+    {
+        $this->errorToException = $errorToException;
+    }
 
     /**
      * @return mixed
@@ -203,21 +217,6 @@ class Config extends SplBean
         $this->isSubQuery = $isSubQuery;
     }
 
-    /**
-     * @return int
-     */
-    public function getConnectTimeout(): int
-    {
-        return $this->connect_timeout;
-    }
-
-    /**
-     * @param int $connect_timeout
-     */
-    public function setConnectTimeout(int $connect_timeout): void
-    {
-        $this->connect_timeout = $connect_timeout;
-    }
 
     /**
      * @return int
@@ -235,4 +234,19 @@ class Config extends SplBean
         $this->max_reconnect_times = $max_reconnect_times;
     }
 
+    /**
+     * @return callable
+     */
+    public function getOnQuery():?callable
+    {
+        return $this->onQuery;
+    }
+
+    /**
+     * @param mixed $onQuery
+     */
+    public function setOnQuery(callable $onQuery): void
+    {
+        $this->onQuery = $onQuery;
+    }
 }

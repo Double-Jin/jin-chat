@@ -10,7 +10,6 @@ namespace EasySwoole\Component\Tests;
 
 
 use EasySwoole\Component\Context\ContextItemHandlerInterface;
-use EasySwoole\Utility\Random;
 
 class ContextContextItemHandler implements ContextItemHandlerInterface
 {
