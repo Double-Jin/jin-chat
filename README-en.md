@@ -39,6 +39,7 @@ So before this, you must be familiar with swoole, EasySwoole, and combine their 
 ## installing
 
 -   Perform the install command ` git clone https://github.com/Double-Jin/jin-chat.git ` will clone to a local project
+-   `composer update` 
 -   Import SQL, there is a 'chat.sql' file in the project root directory, import the SQL file into the database
 -   Modify 'dev.php' file, configure mysql/redis and other parameters
 -   Configure the nginx agent
