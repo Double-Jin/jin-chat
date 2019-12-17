@@ -1,3 +1,4 @@
+README: [English](https://github.com/Double-Jin/jin-chat/blob/master/README-en.md) | [中文](https://github.com/Double-Jin/jin-chat/blob/master/README.md)
 # 声明
 
 > jin-chat 是基于EasySwoole与layim 的完整聊天应用
@@ -22,23 +23,20 @@
 * Redis协程连接池
 * Task异步任务
 * 优化代码布局
-
----------------------------------
-##### 原有功能 
--   登录 | 没什么好说的...
--   注册 | 注册过程中为用户分配了一个默认分组，并将用户添加到所有人都在的一个群（10001）
--   查找 - 添加好友 | 可以根据用户名、昵称、id 来查找，不输入内容则查找所有用户，点击发起好友申请
--   查找 - 加入群 | 可根据群昵称、群 id 查找群聊，点击加入
--   创建群 | 创建一个群聊
--   消息盒子 | 用来接受好友请求和同意或拒绝好友请求的系统消息
--   个性签名 | 并没有什么卵用的功能
--   一对一聊天 | 可发送文字、表情、图片、文件、代码等
--   群聊 | 新成员加入群聊时，如果此刻你正开启着该群对话框，将收到新人入群通知
--   查看群成员
--   临时会话 | 在群成员中，点击群成员头像即可发起临时会话
--   历史记录 | 聊天面板只显示 20 条记录，更多记录点击`聊天记录`查看
--   离线消息 | 对方不在线的时候，向对方发起好友请求或者消息，将在对方上线后第一时间推送
--   换肤 | 这个是 layim 自带的东西。。
+* 登录 | 没什么好说的...
+* 注册 | 注册过程中为用户分配了一个默认分组，并将用户添加到所有人都在的一个群（10001）
+* 查找 - 添加好友 | 可以根据用户名、昵称、id 来查找，不输入内容则查找所有用户，点击发起好友申请
+* 查找 - 加入群 | 可根据群昵称、群 id 查找群聊，点击加入
+* 创建群 | 创建一个群聊
+* 消息盒子 | 用来接受好友请求和同意或拒绝好友请求的系统消息
+* 个性签名 | 并没有什么卵用的功能
+* 一对一聊天 | 可发送文字、表情、图片、文件、代码等
+* 群聊 | 新成员加入群聊时，如果此刻你正开启着该群对话框，将收到新人入群通知
+* 查看群成员
+* 临时会话 | 在群成员中，点击群成员头像即可发起临时会话
+* 历史记录 | 聊天面板只显示 20 条记录，更多记录点击`聊天记录`查看
+* 离线消息 | 对方不在线的时候，向对方发起好友请求或者消息，将在对方上线后第一时间推送
+* 换肤 | 这个是 layim 自带的东西。。
 ## 安装
 
 -   执行安装命令 `git clone https://github.com/Double-Jin/jin-chat.git` 将项目克隆到本地
@@ -66,10 +64,11 @@ server {
 
 ## 部分截图
 
-![图片](https://iocaffcdn.phphub.org/uploads/images/201906/19/36324/syzUSGcoH2.jpg!large)
 
-![图片](https://iocaffcdn.phphub.org/uploads/images/201906/19/36324/NRpQ8vC8zC.jpg!large)
-![chat](https://iocaffcdn.phphub.org/uploads/images/201906/19/36324/DVRpo0UZwv.jpg!large)
-![图片](https://iocaffcdn.phphub.org/uploads/images/201906/19/36324/OkNR5LKgOh.jpg!large)
+![图片](https://cdn.learnku.com/uploads/images/201907/01/36324/hDVIioONoy.jpeg!large)
 
-![图片](https://iocaffcdn.phphub.org/uploads/images/201906/19/36324/6n83ZCyKx4.jpg!large)
+![图片](https://cdn.learnku.com/uploads/images/201907/01/36324/6SFf5jVpYs.jpeg!large)
+![chat](https://cdn.learnku.com/uploads/images/201907/01/36324/7fkqjRARXh.jpeg!large)
+![图片](https://cdn.learnku.com/uploads/images/201907/01/36324/HimqXRDLRm.jpeg!large)
+
+![图片](https://cdn.learnku.com/uploads/images/201907/01/36324/vThT4zh5Fy.jpeg!large)

@@ -81,12 +81,14 @@ class WebSocketEvents
         ];
         //检查离线消息
         $offline_messgae = $db->where('user_id', $user['id'])->where('`status`', 0)->get('offline_message');
-        foreach ($offline_messgae as $k=>$v) {
+        if ($offline_messgae){
+            foreach ($offline_messgae as $k=>$v) {
 
-            $fd = Cache::getInstance()->get('uid'.$user['id']);//获取接受者fd
-            if ($fd){
-                $server->push($fd['value'], $v['data']);//发送消息
-                $db->where('id', $v['id'])->update('offline_message',['status' => 1]);
+                $fd = Cache::getInstance()->get('uid'.$user['id']);//获取接受者fd
+                if ($fd){
+                    $server->push($fd['value'], $v['data']);//发送消息
+                    $db->where('id', $v['id'])->update('offline_message',['status' => 1]);
+                }
             }
         }
         $server->push($request->fd, json_encode($data));
@@ -111,10 +113,12 @@ class WebSocketEvents
             "status"=> 'offline'
         ];
 
-        foreach ($friend_list as $k => $v) {
-            $result = Cache::getInstance()->get('uid'.$v['friend_id']);//获取接受者fd
-            if ($result){
-                return $server->push($result['value'], json_encode($data));//发送消息
+         if ($friend_list){
+            foreach ($friend_list as $k => $v) {
+                $result = Cache::getInstance()->get('uid'.$v['friend_id']);//获取接受者fd
+                if ($result){
+                    $server->push($result['value'], json_encode($data));//发送消息
+                }
             }
         }
         if ($uid !== false) {

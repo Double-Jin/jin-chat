@@ -309,7 +309,6 @@ class Index extends Controller
                 "type" => "token expire"
             ];
             $this->response()->setMessage(json_encode($data));
-            return;
         }
 
         $db = MysqlPool::defer();
