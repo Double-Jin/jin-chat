@@ -11,7 +11,7 @@ namespace App\WebSocket;
 use App\Utility\Pool\MysqlPool;
 use App\Utility\Pool\RedisPool;
 use EasySwoole\EasySwoole\ServerManager;
-use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
+use EasySwoole\EasySwoole\Task\TaskManager;
 use EasySwoole\FastCache\Cache;
 use EasySwoole\Socket\AbstractInterface\Controller;
 
@@ -104,7 +104,8 @@ class Index extends Controller
                 ->get('group_member as gm', null, 'u.id');
 
             // 异步推送
-            TaskManager::async(function () use ($list, $user, $data) {
+            $task = TaskManager::getInstance();
+            $task->async(function () use ($list, $user, $data) {
                 $server = ServerManager::getInstance()->getSwooleServer();
                 $db = MysqlPool::defer();
 
@@ -126,7 +127,6 @@ class Index extends Controller
                         $server->push($fd['value'], json_encode($data));//发送消息
                     }
                 }
-
             });
 
             //记录聊天记录
@@ -326,18 +326,21 @@ class Index extends Controller
         ];
 
         // 异步推送
-        TaskManager::async(function () use ($list, $user, $data) {
-            $server = ServerManager::getInstance()->getSwooleServer();
-
-            foreach ($list as $k => $v) {
-                $fd = Cache::getInstance()->get('uid' . $v['user_id']);//获取接受者fd
-                if ($fd) {
-                    $server->push($fd['value'], json_encode($data));//发送消息
+        $task = TaskManager::getInstance();
+        $task->async(
+            function () use ($list, $user, $data) {
+                $server = ServerManager::getInstance()->getSwooleServer();
+    
+                foreach ($list as $k => $v) {
+                    $fd = Cache::getInstance()->get('uid' . $v['user_id']);//获取接受者fd
+                    if ($fd) {
+                        $server->push($fd['value'], json_encode($data));//发送消息
+                    }
+    
                 }
-
+    
             }
-
-        });
+        );
     }
 
 
