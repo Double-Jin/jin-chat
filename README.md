@@ -40,7 +40,7 @@ README: [English](https://github.com/Double-Jin/jin-chat/blob/master/README-en.m
 ## 安装
 
 -   执行安装命令 `git clone https://github.com/Double-Jin/jin-chat.git` 将项目克隆到本地
--   `composer update` 
+-   `composer install` 
 -   导入 sql，项目根目录下有个 `chat.sql` 文件，将该 sql 文件导入数据库即可
 -   修改`dev.php` 文件，配置mysql/redis等参数
 -   配置nginx代理
@@ -59,7 +59,7 @@ server {
 }
 ```
 -   修改`App\HttpController\index.php的index`方法中的`$hostName`变量为当前域名ws地址
--   运行 EasySwoole ` php easyswoole start`
+-   运行 EasySwoole ` php easyswoole server start`
 -   此时访问 `es-chat.cc` 即可进入登录页面
 -   测试账号 `test1` - `test2` 密码全是 `123456`，当然你也可以自行注册。
 
