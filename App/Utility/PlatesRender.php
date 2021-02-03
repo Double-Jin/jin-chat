@@ -24,11 +24,11 @@ class PlatesRender implements RenderInterface
     /**
      * 渲染模板
      * @param string $template
-     * @param array $data
-     * @param array $options
+     * @param array|null $data
+     * @param array|null $options
      * @return string|null
      */
-    public function render(string $template, array $data = [], array $options = []): ?string
+    public function render(string $template, ?array $data = [], ?array $options = []): ?string
     {
         // 支持模板引擎以闭包形式设置(多进程渲染时请注意进程隔离问题)
         if (isset($options['call']) && is_callable($options['call'])) {
@@ -55,9 +55,10 @@ class PlatesRender implements RenderInterface
     /**
      * 异常时可以输出错误模板
      * @param \Throwable $throwable
+     * @param $arg
      * @return string
      */
-    public function onException(\Throwable $throwable): string
+    public function onException(\Throwable $throwable, $arg): string
     {
         return 'Error: ' . $throwable->getMessage();
     }

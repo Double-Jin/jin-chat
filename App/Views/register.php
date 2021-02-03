@@ -69,7 +69,7 @@
 <script src="/Static/asset/layuiv2/layui.js"></script>
 <script>
     url = window.location.host;
-    url = url.split(':')[0];
+    // url = url.split(':')[0];
     url = 'http://' + url;
 
     layui.use('upload', function(){
@@ -103,7 +103,7 @@
         //监听提交
         form.on('submit(formDemo)', function(data){
             $.ajax({
-                url:"/register",
+                url:"/user/register",
                 data:data.field,
                 type:"post",
                 dataType:"json",

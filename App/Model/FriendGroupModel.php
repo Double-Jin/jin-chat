@@ -12,9 +12,9 @@ class FriendGroupModel extends Base
 {
     public $tableName = "friend_group";
 
-    public function insertFriendGroup($insert) {
-        $result = $this->db->insert($this->tableName,$insert);
-        return $result ? $this->db->getInsertId() : null;
+    public function insertFriendGroup($insert)
+    {
+        return $this->data($insert)->save();
     }
 
 }

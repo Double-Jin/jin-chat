@@ -11,7 +11,8 @@ namespace App\HttpController;
 
 use App\Utility\PlatesRender;
 use EasySwoole\EasySwoole\Config;
-use EasySwoole\Http\AbstractInterface\Controller;
+use EasySwoole\HttpAnnotation\AnnotationController;
+use EasySwoole\HttpAnnotation\Exception\Annotation\ParamValidateError;
 use EasySwoole\Template\Render;
 
 /**
@@ -19,7 +20,7 @@ use EasySwoole\Template\Render;
  * Class Base
  * @package App\HttpController
  */
-class Base extends Controller
+class Base extends AnnotationController
 {
     function index()
     {
@@ -53,10 +54,10 @@ class Base extends Controller
     }
 
 
-    protected function writeJson($statusCode = 200, $msg = null,$result = null)
+    protected function writeJson($statusCode = 200, $msg = null, $result = null)
     {
         if (!$this->response()->isEndResponse()) {
-            $data = Array(
+            $data = array(
                 "code" => $statusCode,
                 "data" => $result,
                 "msg" => $msg
@@ -68,5 +69,15 @@ class Base extends Controller
         } else {
             return false;
         }
+    }
+
+    protected function onException(\Throwable $throwable): void
+    {
+        if ($throwable instanceof ParamValidateError) {
+            $this->writeJson(10001, $throwable->getValidate()->getError()->__toString());
+            return;
+        }
+
+        $this->writeJson(10001, $throwable->getMessage());
     }
 }
