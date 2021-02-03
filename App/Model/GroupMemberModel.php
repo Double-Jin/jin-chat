@@ -12,9 +12,9 @@ class GroupMemberModel extends Base
 {
     public $tableName = "group_member";
 
-    public function insertGroupMember($insert) {
-        $result = $this->db->insert($this->tableName,$insert);
-        return $result ? $this->db->getInsertId() : null;
+    public function insertGroupMember($insert)
+    {
+        return $this->data($insert)->save();
     }
 
 }

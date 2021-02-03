@@ -8,11 +8,15 @@
 
 namespace App\WebSocket;
 
-use App\Utility\Pool\MysqlPool;
-use App\Utility\Pool\RedisPool;
+use App\Model\ChatRecordModel;
+use App\Model\FriendModel;
+use App\Model\GroupMemberModel;
+use App\Model\OfflineMessageModel;
+use App\Model\SystemMessageModel;
 use EasySwoole\EasySwoole\ServerManager;
-use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
+use EasySwoole\EasySwoole\Task\TaskManager;
 use EasySwoole\FastCache\Cache;
+use EasySwoole\RedisPool\RedisPool;
 use EasySwoole\Socket\AbstractInterface\Controller;
 
 /**
@@ -40,9 +44,6 @@ class Index extends Controller
             $this->response()->setMessage(json_encode($data));
             return;
         }
-        $db = MysqlPool::defer();
-
-        //获取swooleServer
 
         if ($info['to']['type'] == "friend") {
             //好友消息
@@ -71,7 +72,7 @@ class Index extends Controller
                     'data' => json_encode($data),
                 ];
                 //插入离线消息
-                $db->insert('offline_message', $offline_message);
+                OfflineMessageModel::create()->data($offline_message)->save();
 
             } else {
                 $server->push($fd['value'], json_encode($data));//发送消息
@@ -85,7 +86,7 @@ class Index extends Controller
                 'content' => $info['mine']['content'],
                 'time' => time()
             ];
-            $db->insert('chat_record', $record_data);
+            ChatRecordModel::create()->data($record_data)->save();
         } elseif ($info['to']['type'] == "group") {
             //群消息
             $data = [
@@ -99,14 +100,13 @@ class Index extends Controller
                 'fromid' => $info['mine']['id'],
                 'timestamp' => time() * 1000
             ];
-            $list = $db->join('user as u', 'u.id = gm.user_id')
+            $list = GroupMemberModel::create()->alias('gm')->field('u.id')->join('user as u', 'u.id = gm.user_id')
                 ->where('group_id', $info['to']['id'])
-                ->get('group_member as gm', null, 'u.id');
+                ->all();
 
             // 异步推送
-            TaskManager::async(function () use ($list, $user, $data) {
+            TaskManager::getInstance()->async(function () use ($list, $user, $data) {
                 $server = ServerManager::getInstance()->getSwooleServer();
-                $db = MysqlPool::defer();
 
                 foreach ($list as $k => $v) {
                     if ($v['id'] == $user['id']) {
@@ -120,8 +120,7 @@ class Index extends Controller
                             'data' => json_encode($data),
                         ];
                         //插入离线消息
-                        $db->insert('offline_message', $offline_message);
-
+                        OfflineMessageModel::create()->data($offline_message)->save();
                     } else {
                         $server->push($fd['value'], json_encode($data));//发送消息
                     }
@@ -137,7 +136,7 @@ class Index extends Controller
                 'content' => $info['mine']['content'],
                 'time' => time()
             ];
-            $db->insert('chat_record', $record_data);
+            ChatRecordModel::create()->data($record_data)->save();
         }
     }
 
@@ -156,7 +155,6 @@ class Index extends Controller
             $this->response()->setMessage(json_encode($data));
             return;
         }
-        $db = MysqlPool::defer();
 
         $friend_id = $info['to_user_id'];
         $system_message_data = [
@@ -167,7 +165,7 @@ class Index extends Controller
             'group_id' => $info['to_friend_group_id'],
             'time' => time()
         ];
-        $isFriend = $db->where('friend_id', $friend_id)->where('user_id', $user['id'])->getOne('friend');
+        $isFriend = FriendModel::create()->where('friend_id', $friend_id)->where('user_id', $user['id'])->get();
         if ($isFriend) {
             $data = [
                 'type' => 'layer',
@@ -187,9 +185,9 @@ class Index extends Controller
             $this->response()->setMessage(json_encode($data));
             return;
         }
-        $db->insert('system_message', $system_message_data);
+        SystemMessageModel::create()->data($system_message_data)->save();
         //获取该接受者未读消息数量
-        $count = $db->where('user_id', $friend_id)->where('`read`', 0)->count('system_message');
+        $count = SystemMessageModel::create()->where('user_id', $friend_id)->where('read', 0)->count();
         $data = [
             "type" => "msgBox",
             "count" => $count
@@ -206,8 +204,7 @@ class Index extends Controller
                 'data' => json_encode($data),
             ];
             //插入离线消息
-            $db->insert('offline_message', $offline_message);
-
+            OfflineMessageModel::create()->data($offline_message)->save();
         } else {
             $server->push($fd['value'], json_encode($data));//发送消息
         }
@@ -230,7 +227,6 @@ class Index extends Controller
             $this->response()->setMessage(json_encode($data));
             return;
         }
-        $db = MysqlPool::defer();
 
         $data = [
             "type" => "addList",
@@ -244,7 +240,7 @@ class Index extends Controller
             ]
         ];
         //获取未读消息盒子数量
-        $count = $db->where('user_id', $info['id'])->where('`read`', 0)->count('system_message');
+        $count = SystemMessageModel::create()->where('user_id', $info['id'])->where('read', 0)->count();
 
         $data1 = [
             "type" => "msgBox",
@@ -263,8 +259,7 @@ class Index extends Controller
                 'data' => json_encode($data1),
             ];
             //插入离线消息
-            $db->insert('offline_message', $offline_message);
-
+            OfflineMessageModel::create()->data($offline_message)->save();
         } else {
             $server->push($fd['value'], json_encode($data));//发送消息
             $server->push($fd['value'], json_encode($data1));//发送消息
@@ -275,13 +270,12 @@ class Index extends Controller
     {
         $info = $this->caller()->getArgs();
 
-        $db = MysqlPool::defer();
         $server = ServerManager::getInstance()->getSwooleServer();
 
         $id = $info['id'];//消息id
-        $system_message = $db->where('id', $id)->getOne('system_message');
+        $system_message = SystemMessageModel::create()->where('id', $id)->get();
         //获取该接受者未读消息数量
-        $count = $db->where('user_id', $system_message['from_id'])->where('`read`', 0)->count('system_message');
+        $count = SystemMessageModel::create()->where('user_id', $system_message['from_id'])->where('read', 0)->count();
         $data = [
             "type" => "msgBox",
             "count" => $count
@@ -297,7 +291,8 @@ class Index extends Controller
 
     }
 
-    public function joinNotify(){
+    public function joinNotify()
+    {
         $info = $this->caller()->getArgs();
 
         $RedisPool = RedisPool::defer();
@@ -311,22 +306,21 @@ class Index extends Controller
             $this->response()->setMessage(json_encode($data));
         }
 
-        $db = MysqlPool::defer();
 
         $groupid = $info['groupid'];
-        $list = $db->where('group_id',$groupid)->get('group_member');
+        $list = GroupMemberModel::create()->where('group_id', $groupid)->all();
         $data = [
             "type" => "joinNotify",
-            "data"  => [
-                "system"    => true,
-                "id"        => $groupid,
-                "type"      => "group",
-                "content"   => $user['nickname']."加入了群聊，欢迎下新人吧～"
+            "data" => [
+                "system" => true,
+                "id" => $groupid,
+                "type" => "group",
+                "content" => $user['nickname'] . "加入了群聊，欢迎下新人吧～"
             ]
         ];
 
         // 异步推送
-        TaskManager::async(function () use ($list, $user, $data) {
+        TaskManager::getInstance()->async(function () use ($list, $user, $data) {
             $server = ServerManager::getInstance()->getSwooleServer();
 
             foreach ($list as $k => $v) {
@@ -339,6 +333,4 @@ class Index extends Controller
 
         });
     }
-
-
 }

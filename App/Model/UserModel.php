@@ -13,22 +13,16 @@ class UserModel extends Base
 {
     public $tableName = "user";
 
-    public function getUserByUsername($username) {
-
-        if(empty($username)) {
-            return [];
-        }
-
-        $this->db->where ("username", $username);
-        $result = $this->db->getOne($this->tableName);
-        return $result ?? [];
+    public function getUserByUsername($username)
+    {
+        $result = $this->where("username", $username)->get();
+        return $result ? $result->toArray() : [];
     }
 
 
-    public function insertUser($insert) {
-
-        $result = $this->db->insert($this->tableName,$insert);
-        return $result ? $this->db->getInsertId() : null;
+    public function insertUser($insert)
+    {
+        return $this->data($insert)->save();
     }
 
 }

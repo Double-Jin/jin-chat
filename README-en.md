@@ -39,7 +39,7 @@ So before this, you must be familiar with swoole, EasySwoole, and combine their 
 ## installing
 
 -   Perform the install command ` git clone https://github.com/Double-Jin/jin-chat.git ` will clone to a local project
--   `composer update` 
+-   `composer install` 
 -   Import SQL, there is a 'chat.sql' file in the project root directory, import the SQL file into the database
 -   Modify 'dev.php' file, configure mysql/redis and other parameters
 -   Configure the nginx agent
@@ -58,7 +58,7 @@ server {
 }
 ```
 -   change`App\HttpController\index.php的index`action`$hostName`Variable is the current domain ws address
--   run EasySwoole ` php easyswoole start`
+-   run EasySwoole ` php easyswoole server start`
 -   At this point, visit 'es-chat.cc' to enter the login page
 -   Test account 'test1' - 'test2' password is' 123456 ', of course, you can also register.
 

@@ -5,14 +5,18 @@
         }
     },
     "require": {
-        "easyswoole/easyswoole": "3.x",
-        "easyswoole/template": "^1.0",
+        "easyswoole/easyswoole": "~3.4.0",
+        "easyswoole/template": "~1.1.0",
         "league/plates": "3.x",
-        "easyswoole/mysqli-pool": "^1.0",
         "easyswoole/socket": "^1.1",
-        "easyswoole/mysqli": "^1.1",
+        "easyswoole/orm": "~1.4.0",
+        "easyswoole/file-watcher": "~1.0.0",
         "easyswoole/verifycode": "^3.0",
         "easyswoole/fast-cache": "^1.0",
-        "easyswoole/redis-pool": "^1.0"
+        "easyswoole/redis-pool": "~2.2.0"
+    },
+    "require-dev": {
+        "easyswoole/phpunit": "^1.0",
+        "easyswoole/swoole-ide-helper": "^1.2"
     }
 }
